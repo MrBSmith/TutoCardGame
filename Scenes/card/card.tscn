@@ -12,6 +12,7 @@ script = ExtResource("1_ya4js")
 anchors_preset = 0
 
 [node name="Panel" type="Panel" parent="Pivot"]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(80, 120)
 layout_mode = 1
 anchors_preset = 8
@@ -99,4 +100,3 @@ text = "3"
 metadata/_edit_lock_ = true
 
 [connection signal="gui_input" from="Pivot/Panel" to="." method="_on_panel_gui_input"]
-[connection signal="mouse_entered" from="Pivot/Panel" to="." method="_on_panel_mouse_entered"]
